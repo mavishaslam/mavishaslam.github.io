@@ -71,7 +71,9 @@ h1 {
 
 
 /* Image & Figure */
-
+img {
+    width: 100%;
+}
 
 
 /* Footer */
