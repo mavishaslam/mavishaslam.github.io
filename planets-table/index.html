@@ -1,66 +1,168 @@
-<DOCTYPE html>
-    <html lang="'en">
-        <head>
-            <meta charset="'utf-8'>
-            >meta name="veiwport" content="width=device-width, initial- scale=1.0">
-            <meta name="author" content="Mavish Aslam"
-            <link href="css/style.css" rel="stylesheet" type="text/css">
-        </head>
-        <body>
-            <header>
-                <h1>Plants Data</h1>
-            </header>
-            <main>
-                <table>
-                    <caption>
-                        Data about the palnts of our solar system (Plantary facts taken from <a
-                        href="http://nssdc.gsfc.nasa.gov/plantary/factsheet/">
-                        Nasa's Plantary Fact Sheet - Metric</a>).
-                    </caption>
-                    <colgroup>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                    </colgroup>
-                    <thead>
-                        <tr></tr>
-                    </thead>
-                    </tbody>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr></tr>
-                    </tbody>
-                </table>
-            </main>
-        </body>
-    </html>
-                    <!-- Add a main element to contain the table -->
-            
-            <!-- Add the table element. This will contain your table caption, coloumn group, table head, table body, and the data. -->
-                
-                <!-- The caption element should be the first child of the table element, and wrap the following text and link.-->
-        
-                Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
-        
-                <!-- The second child of the table element should be the colgroup element, which also contains several col elements, and helps define the purpose of the table colums. -->
-                    
-                <!-- The table head element should be the third child of the table element; it will wrap the code and content to define a row of column headers. -->    
-                
-                <!-- The fourth child of the table element should be the table body element, which will contain the code and content to display rows of data. -->
-                    
-                <!-- Please note that you do NOT need to add a table footer for this assignment. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mavish Aslam">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <title>Planets Data</title>
+</head>
+<body id="top">
+  <header>
+    <h1>Planets Data</h1>
+  </header>
+  <main>
+    <table>
+      <caption>
+        Data about the planets of our solar system (Planetary facts taken from <a
+        href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank">
+        NASA's Planetary Fact Sheet - Metric</a>).
+      </caption>
+      <colgroup>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Planet</th>
+          <th>Mass (10^24kg)</th>
+          <th>Diameter (km)</th>
+          <th>Density (kg/m^3)</th>
+          <th>Gravity (m/s^2)</th>
+          <th>Escape Velocity (km/s)</th>
+          <th>Rotation Period (hours)</th>
+          <th>Length of Day (hours)</th>
+          <th>Distance from Sun (10^6 km)</th>
+          <th>Perihelion (10^6 km)</th>
+          <th>Aphelion (10^6 km)</th>
+          <th>Orbital Period (days)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mercury</td>
+          <td>0.33</td>
+          <td>4879</td>
+          <td>5427</td>
+          <td>3.7</td>
+          <td>4.3</td>
+          <td>1407.6</td>
+          <td>4222.6</td>
+          <td>57.9</td>
+          <td>46.0</td>
+          <td>69.8</td>
+          <td>88.0</td>
+        </tr>
+        <tr>
+          <td>Venus</td>
+          <td>4.87</td>
+          <td>12104</td>
+          <td>5243</td>
+          <td>8.9</td>
+          <td>10.4</td>
+          <td>-5832.5</td>
+          <td>2802.0</td>
+          <td>108.2</td>
+          <td>107.5</td>
+          <td>108.9</td>
+          <td>224.7</td>
+        </tr>
+        <tr>
+          <td>Earth</td>
+          <td>5.97</td>
+          <td>12756</td>
+          <td>5514</td>
+          <td>9.8</td>
+          <td>11.2</td>
+          <td>23.9</td>
+          <td>24.0</td>
+          <td>149.6</td>
+          <td>147.1</td>
+          <td>152.1</td>
+          <td>365.2</td>
+        </tr>
+        <tr>
+          <td>Mars</td>
+          <td>0.642</td>
+          <td>6792</td>
+          <td>3933</td>
+          <td>3.7</td>
+          <td>5.0</td>
+          <td>24.6</td>
+          <td>24.7</td>
+          <td>227.9</td>
+          <td>206.6</td>
+          <td>249.2</td>
+          <td>687.0</td>
+        </tr>
+        <tr>
+          <td>Jupiter</td>
+          <td>1898</td>
+          <td>142984</td>
+          <td>1326</td>
+          <td>23.1</td>
+          <td>59.5</td>
+          <td>9.9</td>
+          <td>9.9</td>
+          <td>778.6</td>
+          <td>740.5</td>
+          <td>816.6</td>
+          <td>4331</td>
+        </tr>
+        <tr>
+          <td>Saturn</td>
+          <td>568</td>
+          <td>120536</td>
+          <td>687</td>
+          <td>9.0</td>
+          <td>35.5</td>
+          <td>10.7</td>
+          <td>10.7</td>
+          <td>1433.5</td>
+          <td>1352.6</td>
+          <td>1514.5</td>
+          <td>10747</td>
+        </tr>
+        <tr>
+          <td>Uranus</td>
+          <td>86.8</td>
+          <td>51118</td>
+          <td>1271</td>
+          <td>8.7</td>
+          <td>21.3</td>
+          <td>-17.2</td>
+          <td>17.2</td>
+          <td>2872.5</td>
+          <td>2741.3</td>
+          <td>3003.6</td>
+          <td>30589</td>
+        </tr>
+        <tr>
+          <td>Neptune</td>
+          <td>102</td>
+          <td>49528</td>
+          <td>1638</td>
+          <td>11.0</td>
+          <td>23.5</td>
+          <td>16.1</td>
+          <td>16.1</td>
+          <td>4495.1</td>
+          <td>4444.5</td>
+          <td>4545.7</td>
+          <td>59800</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
