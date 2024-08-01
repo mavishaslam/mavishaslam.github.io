@@ -74,47 +74,122 @@ header, footer {
 
 /* NOTE: While you will be using some of the same CSS properties, the VALUES 
    may need to be different in order to style the page correctly. */
+/* Imported Typefaces */
+@font-face {
+    font-family: 'Montserrat'; 
+    src: url('../fonts/Montserrat.woff2') format('woff2');
+    }
 
+@font-face {
+    font-family: 'Josefinslab';
+    src: url('../fonts/Josefinslab.woff2') format('woff2');
+    }
 
-
-/* Imported Typfaces */
-
-
-
-
+@font-face {
+    font-family: 'Coolfont';
+    src: url('../fonts/coolfont-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
 
 /* Typography Styles */
+html {
+    font-family: 'Montserrat', sans-serif;
+}
 
+h1 {
+    font-family: 'Coolfont', 'Josefinslab', Arial, sans-serif;
+    letter-spacing: 0.125rem; /* 2px */
+    font-size: 3.75rem; /* 60px */
+    margin: 1.125rem; /* 18px */
+    text-align: center;
+}
 
+h2 {
+    font-family: 'Josefinslab', serif;
+    letter-spacing: 0.125rem; /* 2px */
+    font-size: 1.5rem; /* 24px */
+}
 
+h2 + p {
+    text-indent: 1.5rem; /* 24px */
+}
 
+p {
+    font-size: 0.75rem; /* 12px */
+    letter-spacing: 0.03125rem; /* 0.5px */
+    word-spacing: 0.125rem; /* 2px */
+}
 
+li {
+    font-size: 0.75rem; /* 12px */
+    letter-spacing: 0.03125rem; /* 0.5px */
+    word-spacing: 0.125rem; /* 2px */
+}
+
+figcaption {
+    font-size: 0.75rem; /* 12px */
+    margin-bottom: 2rem; /* 32px */
+}
 
 /* Link Styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
+a:link,
+a:visited {
+    color: blue;
+}
 
-
-
-
+a:focus,
+a:hover {
+    color: darkblue;
+}
 
 /* List Styling */
+ul {
+    list-style-type: square;
+}
 
+ol {
+    list-style-type: lower-alpha;
+}
 
-
-
-
+.long-list a:hover {
+    text-transform: uppercase;
+}
 
 /* Navigation Menu */
+nav {
+    padding: 0;
+    margin-top: 0.25rem; /* 4px */
+}
 
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+    font-size: 1.125rem; /* 18px */
+    margin-bottom: 1.5rem; /* 24px */
+    border: 0.0625rem solid #33658A; /* 1px */
+}
 
+nav a:focus,
+nav a:hover {
+    color: #FFF;
+    background-color: #33658A;
+}
 
-
-
+nav a:active {
+    color: #FFF;
+    background-color: #000;
+}
 
 /* Footer Styles */
-
-
-
-
-
-
+footer {
+    text-align: center;
+}
