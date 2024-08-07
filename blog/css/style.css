@@ -1,183 +1,142 @@
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    color: #333; /* Default text color */
-    background-color: #f9f9f9; /* Background color for the page */
+/* Font Imports */
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-regular.ttf') format('truetype');
 }
 
-/* Header */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url('fonts/JosefinSlab-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('fonts/RobotoSlab-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rozha One';
+    src: url('fonts/RozhaOne-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ultra';
+    src: url('fonts/Ultra-regular.ttf') format('truetype');
+}
+
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Default font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
 header {
-    background-color: #007BFF; /* Header background color */
-    color: #fff; /* Header text color */
-    padding: 20px;
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2em; /* Larger font size for the main heading */
+    font-size: 2em;
 }
 
-.highlight {
-    color: #FFD700; /* Highlighted text color */
-}
-
-/* Navigation */
 nav {
-    background-color: #333; /* Navigation background color */
+    background: #444;
+    color: #fff;
+    padding: 10px 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center; /* Center navigation items */
+    text-align: center;
 }
 
 nav ul li {
-    margin: 0 15px; /* Space between navigation items */
+    display: inline;
+    margin: 0 15px;
 }
 
-nav a {
-    color: #fff; /* Link color */
-    text-decoration: none; /* Remove underline */
-    padding: 10px 15px; /* Add padding around links */
-    display: block; /* Make links block level */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-nav a:hover {
-    background-color: #575757; /* Background color on hover */
-    border-radius: 4px; /* Rounded corners for hover effect */
-}
-
-/* Main Content */
 main {
     padding: 20px;
-    max-width: 1200px; /* Maximum width for main content */
-    margin: 0 auto; /* Center main content */
 }
 
-main h2 {
-    font-size: 1.5em; /* Font size for main content heading */
-    margin-top: 0;
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
-article {
-    margin-bottom: 20px;
-}
-
-article figure {
-    margin: 0;
-    padding: 0;
-    text-align: center; /* Center images in article */
-}
-
-article img {
+.article-image img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ddd; /* Border around images */
-    border-radius: 4px; /* Rounded corners for images */
-}
-
-article p {
-    margin: 10px 0; /* Space between paragraphs */
-}
-
-article time {
-    display: block;
-    font-style: italic;
-    color: #666; /* Lighter color for the date */
-}
-
-/* Subsection */
-.subsection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 20px;
 }
 
 .subsection figure {
     margin: 0;
-    padding: 0;
 }
 
 .subsection img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
 }
 
-.subsection figcaption {
-    text-align: center; /* Center captions under images */
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
-/* Aside */
 aside {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    background: #f4f4f4;
+    padding: 10px;
 }
 
-aside h3 {
-    font-size: 1.2em;
-    margin-top: 0;
-}
-
-aside img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-aside p {
-    margin: 10px 0;
-}
-
-aside a.expand {
-    display: block;
-    text-align: center;
-    font-size: 2em;
-    color: #007BFF; /* Expand icon color */
-    text-decoration: none;
-}
-
-aside a.expand:hover {
-    color: #0056b3; /* Darker color on hover */
-}
-
-/* Footer */
 footer {
-    background-color: #333;
+    background: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 footer a {
-    color: #FFD700; /* Link color in footer */
+    color: #fff;
     text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
 
 footer ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0;
 }
 
 footer ul li {
-    margin-bottom: 5px;
+    margin: 5px 0;
 }
