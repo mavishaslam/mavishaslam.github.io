@@ -1,51 +1,183 @@
-/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+    background-color: #f9f9f9; /* Background color for the page */
+}
 
-        /* 
-        
-        Spacing 
+/* Header */
+header {
+    background-color: #007BFF; /* Header background color */
+    color: #fff; /* Header text color */
+    padding: 20px;
+    text-align: center;
+}
 
-            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+header h1 {
+    margin: 0;
+    font-size: 2em; /* Larger font size for the main heading */
+}
 
-            - margin, (shorthand and/or specific properties like margin-top, etc.)
+.highlight {
+    color: #FFD700; /* Highlighted text color */
+}
 
-            - letter-spacing, word-spacing, line-height
+/* Navigation */
+nav {
+    background-color: #333; /* Navigation background color */
+}
 
-            - width, max-width, min-width
-            - height, max-height, min-height
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center navigation items */
+}
 
-        Typography 
+nav ul li {
+    margin: 0 15px; /* Space between navigation items */
+}
 
-            - font-family, font-size, font-style, font-weight
+nav a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Add padding around links */
+    display: block; /* Make links block level */
+}
 
-            - text-decoration, text-align
+nav a:hover {
+    background-color: #575757; /* Background color on hover */
+    border-radius: 4px; /* Rounded corners for hover effect */
+}
 
-            - color
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px; /* Maximum width for main content */
+    margin: 0 auto; /* Center main content */
+}
 
-            - text-shadow, text-transform
+main h2 {
+    font-size: 1.5em; /* Font size for main content heading */
+    margin-top: 0;
+}
 
-        Box, Layout and Border 
+article {
+    margin-bottom: 20px;
+}
 
-            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+article figure {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center images in article */
+}
 
-            - box-shadow
+article img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Border around images */
+    border-radius: 4px; /* Rounded corners for images */
+}
 
-            - display, float, align-items, align-content
+article p {
+    margin: 10px 0; /* Space between paragraphs */
+}
 
-            - grid-template-columns, grid-column-gap
+article time {
+    display: block;
+    font-style: italic;
+    color: #666; /* Lighter color for the date */
+}
 
-            - transform
+/* Subsection */
+.subsection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
 
-        Other
+.subsection figure {
+    margin: 0;
+    padding: 0;
+}
 
-            - :nth()-child (to target specific child elements)
+.subsection img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
 
-            - :focus, :hover, :active (to target link states)
+.subsection figcaption {
+    text-align: center; /* Center captions under images */
+}
 
-            - @font-face or @import (to import typefaces)
+/* Aside */
+aside {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
 
-        */
+aside h3 {
+    font-size: 1.2em;
+    margin-top: 0;
+}
 
+aside img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
 
-/* ------ START WRITING YOUR CODE BELOW ------ */
+aside p {
+    margin: 10px 0;
+}
 
+aside a.expand {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    color: #007BFF; /* Expand icon color */
+    text-decoration: none;
+}
 
+aside a.expand:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #FFD700; /* Link color in footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
