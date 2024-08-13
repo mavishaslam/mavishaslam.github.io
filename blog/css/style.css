@@ -24,11 +24,6 @@ header {
     text-align: center;
 }
 
-header img {
-    width: 100%;
-    height: auto;
-}
-
 header h1 {
     margin: 0;
     font-size: 2em;
@@ -66,7 +61,7 @@ h2, h3 {
 }
 
 .article-image img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -92,11 +87,6 @@ aside {
     padding: 10px;
 }
 
-aside img {
-    width: 100%;
-    height: auto;
-}
-
 footer {
     background: #333;
     color: #fff;
@@ -119,21 +109,4 @@ footer ul {
 
 footer ul li {
     margin: 5px 0;
-}
-
-/* Gallery Styling */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.gallery figure {
-    flex: 1 1 calc(33.333% - 10px); /* 3 images per row with space */
-    margin: 0;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
 }
