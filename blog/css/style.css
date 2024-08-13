@@ -1,3 +1,8 @@
+/* Test Style */
+body {
+    background-color: yellow; /* Check if this applies */
+}
+
 /* Font Imports */
 @font-face {
     font-family: 'Roboto';
@@ -60,18 +65,13 @@ h2, h3 {
     font-family: 'Josefin Slab', serif; /* Serif font for headings */
 }
 
-.article-image img {
+.article-image img, .subsection img {
     max-width: 100%;
     height: auto;
 }
 
 .subsection figure {
     margin: 0;
-}
-
-.subsection img {
-    max-width: 100%;
-    height: auto;
 }
 
 button {
@@ -109,4 +109,12 @@ footer ul {
 
 footer ul li {
     margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
