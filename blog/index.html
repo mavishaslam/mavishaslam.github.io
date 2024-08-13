@@ -3,105 +3,104 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        <!-- Use a meta tag to designate yourself as the author of the page -->
-        
-        
-        <!-- Give your page a title. -->
-        
-        
-        <!-- Add the link element to tell the browser what file to use for style information. -->
-        
-        
+        <meta name="author" content="Mavish Aslam"> <!-- Update with your name -->
+        <title>My Blog</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
-             
-            
-            <!-- Add a level 1 heading to display three words. Use a span element to highlight the second word. Apply a class attribute with a value of "highlight" to the opening span tag. -->
-            
-            
-        </header>   
+            <h1>My <span class="highlight">Awesome</span> Blog</h1>
+        </header>
         
-        
-        <!-- Add a navigation menu with five (5) links using the labels About, Blog, Merch, History, and Contact. Use the "#" symbol for your href values. -->
-        
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Merch</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
         
         <main>
+            <h2>Welcome to My Blog</h2>
             
-            
-            <!-- Add a level 2 heading -->
-            
-            
-            <!-- Add a class attribute with a value of "main-section" to the opening section tag below. -->
-            
-            
-            <section>
+            <section class="main-section">
                 <article>
+                    <figure class="article-image">
+                        <img src="images/industrial-city.jpg" alt="Industrial City">
+                        <figcaption>Image of an industrial cityscape.</figcaption>
+                    </figure>
                     
+                    <p>This is the first paragraph of text in the article.</p>
+                    <p>This is the second paragraph of text in the article.</p>
+                    <h3>Subheading One</h3>
                     
-                    <!-- Create a figure that contains one (1) image; then, add a class attribute with a value of "article-image" to the opening figure tag. -->
+                    <p>This is a paragraph under the first subheading.</p>
+                    <p>This is another paragraph under the first subheading.</p>
+                    <h3>Subheading Two</h3>
                     
+                    <p>More content for the second subheading.</p>
+                    <p>Additional content for the second subheading.</p>
+                    <p>Final content for the second subheading.</p>
                     
-                    <!-- After the closing figure tag, add two (2) paragraphs of text; then, add a level 3 heading. -->
-                                        
+                    <time datetime="2024-08-13">August 13, 2024</time>
                     
-                    <!-- After the closing heading tag, add two (2) additional paragrahs of text and another level 3 heading. -->
-                                        
-                    
-                    <!-- After the closing heading tag, add three (3) paragraphs of text. -->
-                    
-                    
-                    <!-- Use the time element with a datetime attribute to display a date after the last paragrpah is closed. -->
-                    
-                    
-                    <!-- Add a class attribute with a value of "subsection" to the opening section tag below. -->
-                    
-                    
-                    <section>
-                        
-                        
-                        <!-- Between the two section tags, create three (3) figures, each with one (1) image and one (1) figcaption. -->
-                        
+                    <section class="subsection">
+                        <figure>
+                            <img src="images/stag.jpg" alt="Stag">
+                            <figcaption>Stag Image</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/industrial.jpg" alt="Industrial">
+                            <figcaption>Industrial Image</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/routine.jpg" alt="Routine">
+                            <figcaption>Routine Image</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/industrial-city.jpg" alt="Industrial City">
+                            <figcaption>Industrial City Image</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/in-nomino.jpg" alt="In Nomino">
+                            <figcaption>In Nomino Image</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/industrial-city-2.jpg" alt="Industrial City 2">
+                            <figcaption>Industrial City 2 Image</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/eren-30s.jpg" alt="Eren 30's">
+                            <figcaption>Eren 30's Image</figcaption>
+                        </figure>
                     </section>
                     
-                    
-                    <!-- Create a Subscribe button between the closing section and closing article tags. -->
-
-                
+                    <button>Subscribe</button>
                 </article>
+                
                 <aside>
+                    <h3>Related Image One</h3>
+                    <img src="images/stag.jpg" alt="Stag">
+                    <p>Description for related image one.</p>
                     
+                    <h3>Related Image Two</h3>
+                    <img src="images/industrial.jpg" alt="Industrial">
+                    <p>Description for related image two.</p>
                     
-                    <!-- Add a level 3 heading, followed by an image and a paragraph. --> 
+                    <h3>Related Image Three</h3>
+                    <img src="images/routine.jpg" alt="Routine">
+                    <p>Description for related image three.</p>
                     
-                    
-                    <!-- Add another level 3 heading, followed by an image and a paragraph. -->
-                    
-                    
-                    <!-- You guesed it, add an additional level three heading, followed by an image and a paragraph -->
-                    
-                    
-                    <!-- Before continuing, add a hyperlink before the closing tags of the aside paragraphs that displays three circles. Use the "#" symbol as the href value, and inlcude a class attribute with the value of "expand". Note: The code to use for a cirle is:
-
-                        &#x26AB;  
-
-                    -->
-                    
-                    
+                    <a href="#" class="expand">&#x26AB;</a>
                 </aside>
             </section>
         </main>
+        
         <footer>
-            
-            
-            <!-- Add a paragraph with the copyright and a link to an email address. --->
-            
-            
-            <!-- Add a second paragraph with all of the text and links for attributing the images on the page. Make sure to use the "ideal" attribution from Creative Commons. -->
-            
-            
+            <p>&copy; 2024 My Blog - Contact me at <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            <p>Image credits: <a href="https://example.com">Stag</a>, <a href="https://example.com">Industrial</a>, <a href="https://example.com">Routine</a>, <a href="https://example.com">Industrial City</a>, <a href="https://example.com">In Nomino</a>, <a href="https://example.com">Industrial City 2</a>, <a href="https://example.com">Eren 30's</a></p>
         </footer>
     </body>
 </html>
