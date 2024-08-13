@@ -1,119 +1,51 @@
-/* Font Imports */
-@font-face {
-    font-family: 'Roboto';
-    src: url('fonts/Roboto-regular.woff2') format('woff2'),
-         url('fonts/Roboto-regular.woff') format('woff'),
-         url('fonts/Roboto-regular.ttf') format('truetype');
-}
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
 
-@font-face {
-    font-family: 'Josefin Slab';
-    src: url('fonts/JosefinSlab-regular.woff2') format('woff2'),
-         url('fonts/JosefinSlab-regular.woff') format('woff'),
-         url('fonts/JosefinSlab-regular.ttf') format('truetype');
-}
+        /* 
+        
+        Spacing 
 
-/* General Styling */
-body {
-    font-family: 'Roboto', sans-serif; /* Default font */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
+            - letter-spacing, word-spacing, line-height
 
-nav {
-    background: #444;
-    color: #fff;
-    padding: 10px 0;
-}
+            - width, max-width, min-width
+            - height, max-height, min-height
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
+        Typography 
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+            - font-family, font-size, font-style, font-weight
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+            - text-decoration, text-align
 
-main {
-    padding: 20px;
-}
+            - color
 
-h2, h3 {
-    font-family: 'Josefin Slab', serif; /* Serif font for headings */
-}
+            - text-shadow, text-transform
 
-.article-image img, .subsection img {
-    max-width: 100%;
-    height: auto;
-}
+        Box, Layout and Border 
 
-.subsection figure {
-    margin: 0;
-}
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
 
-button {
-    background: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
+            - box-shadow
 
-aside {
-    background: #f4f4f4;
-    padding: 10px;
-}
+            - display, float, align-items, align-content
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+            - grid-template-columns, grid-column-gap
 
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
+            - transform
 
-footer ul {
-    list-style: none;
-    padding: 0;
-}
+        Other
 
-footer ul li {
-    margin: 5px 0;
-}
+            - :nth()-child (to target specific child elements)
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-} 
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+
