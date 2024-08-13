@@ -12,7 +12,7 @@
     <h1>Planets Data</h1>
   </header>
   <main>
-    <table title="Detailed planetary data for our solar system">
+    <table>
       <caption>
         Data about the planets of our solar system (Planetary facts taken from <a
         href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank">
@@ -20,36 +20,137 @@
       </caption>
       <colgroup>
         <col title="Planet Name">
-        <col title="Mass (10^24kg)">
+        <col title="Mass (10^24 kg)">
         <col title="Diameter (km)">
         <col title="Density (kg/m^3)">
         <col title="Gravity (m/s^2)">
-        <col title="Escape Velocity (km/s)">
-        <col title="Rotation Period (hours)">
         <col title="Length of Day (hours)">
         <col title="Distance from Sun (10^6 km)">
-        <col title="Perihelion (10^6 km)">
-        <col title="Aphelion (10^6 km)">
-        <col title="Orbital Period (days)">
+        <col title="Mean Temperature (°C)">
+        <col title="Number of Moons">
+        <col title="Notes">
+        <col title="Image">
       </colgroup>
       <thead>
         <tr>
-          <th scope="col">Planet</th>
-          <th scope="col">Mass (10^24kg)</th>
-          <th scope="col">Diameter (km)</th>
-          <th scope="col">Density (kg/m^3)</th>
-          <th scope="col">Gravity (m/s^2)</th>
-          <th scope="col">Escape Velocity (km/s)</th>
-          <th scope="col">Rotation Period (hours)</th>
-          <th scope="col">Length of Day (hours)</th>
-          <th scope="col">Distance from Sun (10^6 km)</th>
-          <th scope="col">Perihelion (10^6 km)</th>
-          <th scope="col">Aphelion (10^6 km)</th>
-          <th scope="col">Orbital Period (days)</th>
+          <th>Name</th>
+          <th>Mass (10^24 kg)</th>
+          <th>Diameter (km)</th>
+          <th>Density (kg/m^3)</th>
+          <th>Gravity (m/s^2)</th>
+          <th>Length of Day (hours)</th>
+          <th>Distance from Sun (10^6 km)</th>
+          <th>Mean Temperature (°C)</th>
+          <th>Number of Moons</th>
+          <th>Notes</th>
+          <th>Image</th>
         </tr>
       </thead>
       <tbody>
-        <!-- Table rows with planetary data -->
+        <tr>
+          <td>Mercury</td>
+          <td>0.33</td>
+          <td>4879</td>
+          <td>5427</td>
+          <td>3.7</td>
+          <td>1407.6</td>
+          <td>57.9</td>
+          <td>167</td>
+          <td>0</td>
+          <td>Smallest planet</td>
+          <td><img src="images/mercury.jpg" alt="Mercury"></td>
+        </tr>
+        <tr>
+          <td>Venus</td>
+          <td>4.87</td>
+          <td>12104</td>
+          <td>5243</td>
+          <td>8.9</td>
+          <td>2802.0</td>
+          <td>108.2</td>
+          <td>464</td>
+          <td>0</td>
+          <td>Hottest planet</td>
+          <td><img src="images/venus.jpg" alt="Venus"></td>
+        </tr>
+        <tr>
+          <td>Earth</td>
+          <td>5.97</td>
+          <td>12756</td>
+          <td>5514</td>
+          <td>9.8</td>
+          <td>24.0</td>
+          <td>149.6</td>
+          <td>15</td>
+          <td>1</td>
+          <td>Only planet with life</td>
+          <td><img src="images/earth.png" alt="Earth"></td>
+        </tr>
+        <tr>
+          <td>Mars</td>
+          <td>0.642</td>
+          <td>6792</td>
+          <td>3933</td>
+          <td>3.7</td>
+          <td>24.7</td>
+          <td>227.9</td>
+          <td>-65</td>
+          <td>2</td>
+          <td>Known as the Red Planet</td>
+          <td><img src="images/mars.jpg" alt="Mars"></td>
+        </tr>
+        <tr>
+          <td>Jupiter</td>
+          <td>1898</td>
+          <td>142984</td>
+          <td>1326</td>
+          <td>23.1</td>
+          <td>9.9</td>
+          <td>778.6</td>
+          <td>-110</td>
+          <td>79</td>
+          <td>Largest planet</td>
+          <td><img src="images/jupiter.jpg" alt="Jupiter"></td>
+        </tr>
+        <tr>
+          <td>Saturn</td>
+          <td>568</td>
+          <td>120536</td>
+          <td>687</td>
+          <td>9.0</td>
+          <td>10.7</td>
+          <td>1433.5</td>
+          <td>-140</td>
+          <td>83</td>
+          <td>Famous for its rings</td>
+          <td><img src="images/saturn.jpg" alt="Saturn"></td>
+        </tr>
+        <tr>
+          <td>Uranus</td>
+          <td>86.8</td>
+          <td>51118</td>
+          <td>1271</td>
+          <td>8.7</td>
+          <td>17.2</td>
+          <td>2872.5</td>
+          <td>-195</td>
+          <td>27</td>
+          <td>Rotates on its side</td>
+          <td><img src="images/uranus.jpg" alt="Uranus"></td>
+        </tr>
+        <tr>
+          <td>Neptune</td>
+          <td>102</td>
+          <td>49528</td>
+          <td>1638</td>
+          <td>11.0</td>
+          <td>16.1</td>
+          <td>4495.1</td>
+          <td>-200</td>
+          <td>14</td>
+          <td>Furthest from the Sun</td>
+          <td><img src="images/neptune.jpg" alt="Neptune"></td>
+        </tr>
       </tbody>
     </table>
   </main>
