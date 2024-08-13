@@ -1,10 +1,5 @@
-/* Test Style */
-body {
-    background-color: yellow; /* Check if this applies */
-}
-
-/* Font Imports */
-@font-face {
+ /* Font Imports */
+ @font-face {
     font-family: 'Roboto';
     src: url('fonts/Roboto-regular.ttf') format('truetype');
 }
