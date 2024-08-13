@@ -1,12 +1,16 @@
- /* Font Imports */
- @font-face {
+/* Font Imports */
+@font-face {
     font-family: 'Roboto';
-    src: url('fonts/Roboto-regular.ttf') format('truetype');
+    src: url('fonts/Roboto-regular.woff2') format('woff2'),
+         url('fonts/Roboto-regular.woff') format('woff'),
+         url('fonts/Roboto-regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Josefin Slab';
-    src: url('fonts/JosefinSlab-regular.ttf') format('truetype');
+    src: url('fonts/JosefinSlab-regular.woff2') format('woff2'),
+         url('fonts/JosefinSlab-regular.woff') format('woff'),
+         url('fonts/JosefinSlab-regular.ttf') format('truetype');
 }
 
 /* General Styling */
@@ -112,4 +116,4 @@ footer ul li {
         display: block;
         margin: 10px 0;
     }
-}
+} 
