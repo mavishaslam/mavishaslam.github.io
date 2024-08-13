@@ -1,142 +1,131 @@
-body, h1, h2, h3, p, ul, li, figure, figcaption, button {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* General Styles */
-body {
-  font-family: 'Trickster', sans-serif; /* Use your custom font */
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
-}
-
-header {
-  background: #333;
-  color: #fff;
-  padding: 1rem 0;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2.5rem;
-}
-
-header .highlight {
-  color: #ff6347; /* Highlight color */
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  background: #444;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 1rem;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-}
-
-nav ul li a:hover {
-  background: #555;
-  border-radius: 5px;
-}
-
-main {
-  padding: 2rem;
-}
-
-h2 {
-  font-size: 2rem;
-  color: #333;
-}
-
-.article-image img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 5px;
-}
-
-.subsection img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  margin: 0.5rem;
-}
-
-aside img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-  margin: 0.5rem;
-}
-
-figure {
-  margin: 1rem 0;
-}
-
-figcaption {
-  font-style: italic;
-  text-align: center;
-}
-
-button {
-  background: #ff6347;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background: #ff4500;
-}
-
-aside {
-  background: #fff;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  margin-top: 2rem;
-}
-
-footer {
-  background: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
-
-footer a {
-  color: #ff6347;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-.expand {
-  display: inline-block;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-}
-
 @font-face {
-  font-family: "Trickster";
-  src:
-    local("Trickster"),
-    url("trickster-COLRv1.otf") format("opentype"),
-    url("trickster-outline.otf") format("opentype"),
-    url("trickster-outline.woff") format("woff");
-}
+    font-family: "Trickster";
+    src:
+      local("Trickster"),
+      url("trickster-COLRv1.otf") format("opentype"),
+      url("trickster-outline.otf") format("opentype"),
+      url("trickster-outline.woff") format("woff");
+  }
+
+  body {
+    font-family: "Trickster", sans-serif; /* Apply the custom font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  header .highlight {
+    color: #f4f4f4;
+  }
+  
+  nav {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  
+  .main-section {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article-image img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #555;
+  }
+  
+  aside {
+    padding: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  aside h3 {
+    margin-top: 0;
+  }
+  
+  aside img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  aside a.expand {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
