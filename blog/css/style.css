@@ -74,20 +74,21 @@ h2 {
   background: #fff;
   padding: 1rem;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
-  display: flex; /* Layout children in a row */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column; /* Adjust layout for column arrangement */
 }
 
 .article-image {
   width: 100%;
   border-radius: 5px;
-  float: left; /* Aligns image to the left */
+  margin-bottom: 1rem; /* Add space below the image */
 }
 
 .subsection {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
-  gap: 1rem; /* Adds spacing between grid items */
+  gap: 1rem; /* Spacing between grid items */
 }
 
 button {
