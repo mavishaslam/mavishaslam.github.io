@@ -75,13 +75,21 @@
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+    display: flex; /* Properly aligned */
+}
   
-  .article-image img {
-    width: 100%;
-    border-radius: 5px;
-  }
-  
+.article-image {
+  width: 100%;
+  border-radius: 5px;
+  float: left; /* Properly aligned */
+}
+
+.subsection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Creates responsive columns */
+  gap: 1rem; /* Adds spacing between grid items */
+}
+
   button {
     background: #333;
     color: #fff;
@@ -100,7 +108,8 @@
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+    margin: 1rem; /* Adds space around the aside */
+}
   
   aside h3 {
     margin-top: 0;
