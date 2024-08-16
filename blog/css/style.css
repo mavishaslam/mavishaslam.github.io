@@ -75,8 +75,7 @@ h2 {
   padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column; /* Adjust layout for column arrangement */
+  display: flex; /* Properly aligned */
 }
 
 .article-image {
@@ -85,10 +84,52 @@ h2 {
   margin-bottom: 1rem; /* Add space below the image */
 }
 
+/* Float classes for demonstration */
+.article-image-left {
+  float: left; /* Floats the element to the left */
+}
+
+.article-image-right {
+  float: right; /* Floats the element to the right */
+}
+
+.article-image-none {
+  float: none; /* No floating; normal document flow */
+}
+
+.article-image-inline-start {
+  float: inline-start; /* Floats to the start edge in the inline direction */
+}
+
+.article-image-inline-end {
+  float: inline-end; /* Floats to the end edge in the inline direction */
+}
+
+/* Global float values */
+.article-image-inherit {
+  float: inherit; /* Inherits the float property from the parent */
+}
+
+.article-image-initial {
+  float: initial; /* Resets to the default float value */
+}
+
+.article-image-revert {
+  float: revert; /* Reverts to the float value from default stylesheet */
+}
+
+.article-image-revert-layer {
+  float: revert-layer; /* Reverts to the value from the current layer */
+}
+
+.article-image-unset {
+  float: unset; /* Resets to the natural value (none if not inherited) */
+}
+
 .subsection {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
-  gap: 1rem; /* Spacing between grid items */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Creates responsive columns */
+  gap: 1rem; /* Adds spacing between grid items */
 }
 
 button {
